@@ -17,7 +17,9 @@ function deleteTask(id: number) {
 </script>
 
 <template>
-  <h1>Список задач</h1>
-  <TaskForm @add="addTask" />
-  <TaskList :tasks="tasks" :onDelete="deleteTask" />
+  <div class="max-w-xl mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-4 text-center text-blue-600">Список задач</h1>
+    <TaskForm @add="addTask" />
+    <TaskList :tasks="tasks" :onDelete="deleteTask" />
+  </div>
 </template>
